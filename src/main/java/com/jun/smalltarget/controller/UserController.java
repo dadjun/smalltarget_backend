@@ -35,5 +35,11 @@ public class UserController {
         UserBean billBeans = userService.queryUser(userBean);
         return billBeans;
     }
+    @PostMapping("/register")
+    @CrossOrigin
+    public UserBean register(UserBean userBean) throws ParseException {
 
+        UserBean billBeans = userService.queryUser(userBean);
+        return billBeans;
+    }
 }
